@@ -9,9 +9,9 @@ r="\033[91m"
 p="\033[1;97m"
 d="\033[00m"
 ab="\033[90m"
-dn=f"{d}[{g}√{d}]{p}"
-er=f"{d}[{r}!{d}]{p}"
-pr=f"{d}[{c}?{d}]{p}"
+dn=f"{r}[{g}√{r}]{r}"
+er=f"{g}[{r}!{g}]{g}"
+pr=f"{g}[{r}?{g}]{g}"
 mbasic="https://mbasic.facebook.com{}"
 ###################awalan#####################
 def clear():
@@ -27,14 +27,14 @@ def baner():
     {g}$$ \$$$$ |  $$ |  $$ |     $$ |  $$ |  \$$  / 
     {g}$$ | \$$ |$$$$$$\ $$$$$$$$\ $$$$$$  |   $$ |
     {g}\__|  \__|\______|\________|\______/    \__|
-{r}------------------------------------------------
-\033[92m|| \033[1;93mAUTHOR   : {r}NILOY-VAU              \033[92m||
-\033[92m|| \033[1;93mTOOL NAME: {r}Fb Follow                \033[92m||
-\033[92m|| \033[1;93mYOUTUBE  : {r} Niloy Ahmed               \033[92m||
-\033[92m|| \033[1;93mWhatsApp : {r}+8801749848171               \033[92m||
-\033[92m|| \033[1;93mGITHUB   : {r}https://github.com/niloy0      \033[92m||
+{r}-------------------------------------------------
+\033[92m|| \033[1;93mAUTHOR   : {r}NILOY-VAU                        \033[92m||
+\033[92m|| \033[1;93mTOOL NAME: {r}Fb Follow                        \033[92m||
+\033[92m|| \033[1;93mYOUTUBE  : {r}Niloy Ahmed                      \033[92m||
+\033[92m|| \033[1;93mWhatsApp : {r}+8801749848171                   \033[92m||
+\033[92m|| \033[1;93mGITHUB   : {r}https://github.com/niloy0        \033[92m||
 \033[92m|| \033[1;93mFacebook : {r}https://facebook.com/NILOY.VAU.6 \033[92m||
-{r}------------------------------------------------""")
+{r}-------------------------------------------------""")
 
 def agent():
     ua={"user-agent":usa,"version":"8.0.2","accept-encoding":"gzip","packagename":"com.datta.liker","device":"true","host":"rajecreation.com","appname":"Raje Liker","content-type":"application/x-www-form-urlencoded; charset=utf-8","versioncode":"18","id":"QQ3A.200605.002","token":"3075dda32ffbbe88"}
@@ -44,7 +44,7 @@ def useragent():
     try:
         usr=open("useragent").read()
     except FileNotFoundError:
-        usr=input(f"{er} \033[1;92m Pest Your User Agent\n{pr} {ab}-> {c}")
+        usr=input(f"{er} \033[1;93m Pest Your User Agent\n{pr} {ab}-> {c}")
     with open("useragent","w") as us:
         us.write(usr)
     return usr
